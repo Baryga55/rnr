@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="beach.ico">
+  <title>Real And Rare CC's</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-image: url("bg-img4.jpg");
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+
+    .logo {
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .logo img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #383838;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 19px;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-right: 10px;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+
+    .navbar a:hover {
+      background-color: #555555;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      text-align: center;
+      background-color: #5555559d;
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 10px;
+      background-color: #35353544;
+      border-radius: 6px;
+    }
+
+    .faq-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        margin: 20px auto;
+        padding: 10px;
+      }
+
+      .logo img {
+        max-width: 90%;
+        height: auto;
+      }
+    }
+
+    h3.footer {
+        color: white;
+        background-color: #1a1a1a;
+    }
+
+    .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .crypto-image {
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 6px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .crypto-image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(41, 41, 41, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+    background-color: #000000e8;
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-height: 70vh; /* Set a maximum height for the popup content */
+    word-break: break-all;
+}
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* Style for popup title */
+        .popup-title {
+            color: #ffffff; /* Change to your preferred color */
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        .popup-text {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-bottom: 10px; /* Add some spacing between different paragraphs */
+}
+
+/* Style for additional popup text */
+.popup-additional-text {
+    color: yellow;
+    font-weight: 500;
+    margin-bottom: 10px; /* Add some spacing between different paragraphs */
+}
+
+        .popup-prices {
+            font-size: 12px;
+            font-weight: 100;
+            color: #ffffff; /* Change to your preferred color */
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-weight: 400;
+        }
+
+        .h5 {
+            color: yellow;
+        }
+
+        .h5 {
+            color: yellow;
+        }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="miamihacks.png" alt="Logo">
+    </div>
+    <h1>Support</h1>
+    <div class="navbar">
+      <a href="orders.html"><img src="basket.ico"> Orders</a>
+      <a href="prod.html"><img src="cartas.ico"> Shop</a>
+      <a href="faq.html"><img src="supportas.ico"> Support</a>
+      <a href="activate.html"><img src="balance.ico"> $0.00</a>
+    </div>
+
+     <!-- Add clickable images with pop-ups -->
+     <div class="image-container">
+        
+        <img src="prod/eth.png" alt="Ethereum" class="crypto-image" onclick="showPopup('Ethereum', 'prod/ether.png', 'ETH address:', '0xA8074f287DbE5B98955B5797357bEFFA0eB744d9')">
+        
+        <img src="prod/btc.png" alt="Bitcoin" class="crypto-image" onclick="showPopup('Bitcoin', 'prod/qrcode.png', 'BTC address:', 'bc1qseakkuy20gau3v7qyxnryt69h4yvcmzwk2jfm9v52yjz2s40jffsxuwzms')">
+        
+        <img src="prod/ltc.png" alt="Litecoin" class="crypto-image" onclick="showPopup('Litecoin', 'prod/lytec.png', 'LTC address:', 'ltc1qq58yyl7l2lnqnqhrjuqmrgkmud4xcdrcmx4zec')">
+    </div>
+
+    <center>
+
+        <h3>Account not activated</h3>
+        <h4 class="h4">To activate an account make a deposit of $100 using any of the suggested methods</h4>
+        <h5 class="h5">This amount will be added to balance</h5>
+        <h5>The account will activate automatically after 2 block confirmations.</h5>
+ 
+ <br><br>
+        <hr>
+
+        
+
+        
+<script src="https://price-static.crypto.com/latest/public/static/widget/index.js"></script>
+<div
+  id="crypto-widget-CoinBlocks"
+  data-transparent="true"
+  data-theme="dark"
+  data-design="modern"
+  data-coin-ids="166,1,2"></div>
+  <hr>
+    
+
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2 class="popup-title" id="popup-title"></h2>
+                <img src="" alt="" id="popup-image">
+                <p class="popup-text" id="popup-text"></p>
+                <p class="popup-additional-text" id="popup-additional-text"></p>
+                <p class="popup-prices" id="popup-prices"></p>
+            </div>
+        </div>
+</div>
+</center>
+  </div>
+  <center>
+    <h3 class="footer">&copy;RealAndRare.fyi</h3>
+  </center>
+
+  
+  <script>
+    
+    async function fetchCryptoPrices(ids) {
+        const response = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd`);
+        const data = await response.json();
+        return data;
+    }
+
+    async function showPopup(title, imageSrc, text, additionalText) {
+        const popup = document.getElementById('popup');
+        const popupTitle = document.getElementById('popup-title');
+        const popupImage = document.getElementById('popup-image');
+        const popupText = document.getElementById('popup-text');
+        const popupAdditionalText = document.getElementById('popup-additional-text');
+        const popupPrices = document.getElementById('popup-prices');
+
+        popupTitle.textContent = title;
+        popupImage.src = imageSrc;
+        popupText.textContent = text;
+        popupAdditionalText.textContent = additionalText;
+
+        const cryptoPrices = await fetchCryptoPrices('ethereum,bitcoin,litecoin');
+        popupPrices.textContent = `Live: ETH $${cryptoPrices.ethereum.usd} | BTC $${cryptoPrices.bitcoin.usd} | LTC $${cryptoPrices.litecoin.usd}`;
+
+        popup.style.display = 'flex';
+    }
+
+    function closePopup() {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'none';
+    }
+
+</script>
+  
+</body>
+</html>

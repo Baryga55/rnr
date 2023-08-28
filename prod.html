@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="beach.ico">
+  <title>Real And Rare CC's</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-image: url("bg-img4.jpg");
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff
+    }
+
+    .logo {
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .logo img {
+      max-width: 90%;
+      height: auto;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #383838;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 19px;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-right: 10px;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        margin: 20px auto;
+        padding: 10px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-card img {
+        width: 45%;
+        height: auto;
+      }
+
+      .logo img {
+        max-width: 90%;
+        height: auto;
+      }
+    }
+
+    h3.footer {
+        color: white;
+        background-color: #1a1a1a;
+    }
+
+    .welcome-back {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      color: #fff;
+    }
+
+    .username {
+      margin: 20px auto;
+      font-size: 18px;
+    }
+
+    .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .box-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid #fff;
+            padding: 10px 0;
+        }
+
+        .box-row1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid #fff;
+            padding: 10px 0;
+        }
+
+        .box-cell {
+            text-align: center;
+            padding: 15px 40px; /* Increase padding to create more space */
+            position: relative;
+            color: #fff;
+        }
+
+        .box-cell1 {
+            text-align: center;
+            padding: 15px 40px; /* Increase padding to create more space */
+            position: relative;
+            color: #fff;
+        }
+
+        .box-cell:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 70%;
+            border-left: 1px solid #fff;
+        }
+
+        .box-cell1:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 70%;
+            border-left: 1px solid #fff;
+        }
+
+        .ccv {
+          width: 35px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box-row {
+                padding: 5px 0; /* Decrease padding for smaller spacing */
+            }
+
+            .box-row1 {
+                padding: 5px 0; /* Decrease padding for smaller spacing */
+            }
+
+            .box-cell {
+                padding: 5px 10px; /* Adjust padding for smaller spacing */
+            }
+
+            .box-cell1 {
+                padding: 5px 10px; /* Adjust padding for smaller spacing */
+            }
+        }
+
+
+          /* Style for the custom button */
+          .styled-button {
+            display: inline-block;
+            padding: 7px 17px;
+            background-color: #4d4d4d;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* On hover, darken the background color */
+        .styled-button:hover {
+            background-color: #000000;
+        }
+
+        /* Container to hold the buttons horizontally */
+        .button-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+      </style>
+</head>
+<body>
+  <div class="welcome-back">
+    <div class="username">
+      Welcome back, <span id="username"></span>!
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="logo">
+      <img src="miamihacks.png" alt="Logo">
+    </div>
+    <h1>Shop</h1>
+    <div class="navbar">
+      <a href="orders.html"><img src="basket.ico"> Orders</a>
+      <a href="prod.html"><img src="cartas.ico"> Shop</a>
+      <a href="faq.html"><img src="supportas.ico"> Support</a>
+      <a href="activate.html"><img src="balance.ico"> $0.00</a>
+    </div>
+    <div class="box-container">
+      <div class="box-row1">
+          <div class="box-cell1">Type</div>
+          <div class="box-cell1">Number</div>
+          <div class="box-cell1">Exp</div>
+          <div class="box-cell1">CVV</div>
+          <div class="box-cell1">Value</div>
+          <div class="box-cell1">Price</div>
+          <div class="box-cell1">Buy</div>
+        </div>
+
+      <div class="box-row">
+          <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+          <div class="box-cell">4024****</div>
+          <div class="box-cell">2/1/2024</div>
+          <div class="box-cell">**7</div>
+          <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+          <div class="box-cell">27$</div>
+          <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+      </div>
+
+      <div class="box-row">
+        <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+        <div class="box-cell">4024****</div>
+        <div class="box-cell">2/1/2024</div>
+        <div class="box-cell">**7</div>
+        <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+        <div class="box-cell">27$</div>
+        <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+    </div>
+
+    <div class="box-row">
+      <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+      <div class="box-cell">4024****</div>
+      <div class="box-cell">2/1/2024</div>
+      <div class="box-cell">**7</div>
+      <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+      <div class="box-cell">27$</div>
+      <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+  </div>
+
+  <div class="box-row">
+    <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+    <div class="box-cell">4024****</div>
+    <div class="box-cell">2/1/2024</div>
+    <div class="box-cell">**7</div>
+    <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+    <div class="box-cell">27$</div>
+    <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+  <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+  <div class="box-cell">4024****</div>
+  <div class="box-cell">2/1/2024</div>
+  <div class="box-cell">**7</div>
+  <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+  <div class="box-cell">27$</div>
+  <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+  <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+  <div class="box-cell">4024****</div>
+  <div class="box-cell">2/1/2024</div>
+  <div class="box-cell">**7</div>
+  <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+  <div class="box-cell">27$</div>
+  <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+  <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+  <div class="box-cell">4024****</div>
+  <div class="box-cell">2/1/2024</div>
+  <div class="box-cell">**7</div>
+  <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+  <div class="box-cell">27$</div>
+  <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+  <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+  <div class="box-cell">4024****</div>
+  <div class="box-cell">2/1/2024</div>
+  <div class="box-cell">**7</div>
+  <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+  <div class="box-cell">27$</div>
+  <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+<div class="box-cell"><img class="ccv" src="visa.ico"></div>
+<div class="box-cell">4024****</div>
+<div class="box-cell">2/1/2024</div>
+<div class="box-cell">**7</div>
+<div style="color: aquamarine;" class="box-cell">$6814.00</div>
+<div class="box-cell">27$</div>
+<a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+</div>
+
+<div class="box-row">
+  <div class="box-cell"><img class="ccv" src="visa.ico"></div>
+  <div class="box-cell">4024****</div>
+  <div class="box-cell">2/1/2024</div>
+  <div class="box-cell">**7</div>
+  <div style="color: aquamarine;" class="box-cell">$6814.00</div>
+  <div class="box-cell">27$</div>
+  <a href="activate.html"><div class="box-cell"><img class="ccv" src="cart.ico"></div></a>
+  </div>
+
+
+
+<div class="button-container">
+  <a class="styled-button" href="activate.html">1</a>
+  <a class="styled-button" href="activate.html">2</a>
+  <a class="styled-button" href="activate.html">3</a>
+  <a class="styled-button" href="activate.html">4</a>
+  <a class="styled-button" href="activate.html">...</a>
+  <a class="styled-button" href="activate.html">1264</a>
+</div>
+ 
+    
+    </div>
+  </div>
+  <center>
+<h3 class="footer">&copy;RealAndRare.fyi</h3>
+  </center>
+
+  <!-- ... (existing code) ... -->
+
+<script>
+
+       // Array of card type icons
+       const cardIcons = ['amex.ico', 'discover.ico', 'visa.ico', 'master.ico'];
+
+
+    // Function to generate a random card type with higher chance for Visa and MasterCard
+    function generateRandomCardType() {
+        const cardTypes = ['amex', 'discover', 'visa', 'master'];
+        const probabilities = [0.1, 0.1, 0.4, 0.4];
+        const random = Math.random();
+        
+        let cumulativeProbability = 0;
+        for (let i = 0; i < cardTypes.length; i++) {
+            cumulativeProbability += probabilities[i];
+            if (random < cumulativeProbability) {
+                return cardTypes[i];
+            }
+        }
+        
+        return cardTypes[cardTypes.length - 1];
+    }
+
+
+
+// Function to generate random card number
+function generateRandomCardNumber(cardType) {
+    let prefix = '';
+    if (cardType === 'amex') {
+        prefix = '37';
+    } else if (cardType === 'discover') {
+        prefix = Math.random() < 0.5 ? '60' : '65';
+    } else if (cardType === 'visa') {
+        prefix = '4' + (Math.floor(Math.random() * 9) + 1);
+    } else if (cardType === 'master') {
+        prefix = '5' + (Math.floor(Math.random() * 5) + 1);
+    }
+
+    return prefix + (Math.floor(Math.random() * 90) + 10) + '****';
+}
+
+// Function to generate random expiration date
+function generateRandomDate() {
+    const month = Math.floor(Math.random() * 12) + 1;
+    const year = new Date().getFullYear() + Math.floor(Math.random() * 7);
+    return month + '/' + year;
+}
+
+// Function to generate random CVV code
+function generateRandomCVV() {
+    return '**' + Math.floor(Math.random() * 10);
+}
+
+// Function to generate random price between $20 and $32
+function generateRandomPrice() {
+    return '$' + (Math.floor(Math.random() * 13) + 20) + '.00';
+}
+
+// Function to generate random value between $1000 and $9000
+function generateRandomValue() {
+        return '$' + (Math.floor(Math.random() * 12000) + 1000) + '.00';
+    }
+
+    // Function to update box rows with random card details
+    function updateBoxRows() {
+        const boxRows = document.querySelectorAll('.box-row');
+        boxRows.forEach((row, index) => {
+            const cardType = generateRandomCardType();
+            const cardTypeImg = row.querySelector('.box-cell img');
+            const cardNumberCell = row.querySelector('.box-cell:nth-child(2)');
+            const expCell = row.querySelector('.box-cell:nth-child(3)');
+            const cvvCell = row.querySelector('.box-cell:nth-child(4)');
+            const valueCell = row.querySelector('.box-cell:nth-child(5)');
+            const priceCell = row.querySelector('.box-cell:nth-child(6)');
+
+            const cardNumber = generateRandomCardNumber(cardType);
+            const expDate = generateRandomDate();
+            const cvv = generateRandomCVV();
+            const value = generateRandomValue();
+
+            cardTypeImg.setAttribute('src', cardType + '.ico');
+            cardNumberCell.textContent = cardNumber;
+            expCell.textContent = expDate;
+            cvvCell.textContent = cvv;
+            valueCell.textContent = value;
+            priceCell.textContent = generateRandomPrice();
+        });
+    }
+  // Call the function initially and then every 5 seconds
+  updateBoxRows();
+  setInterval(updateBoxRows, 900000000);
+
+
+    // Retrieve the username from local storage
+    const username = localStorage.getItem('username');
+
+    // Display the username in the appropriate element
+    const usernameElement = document.getElementById('username');
+    usernameElement.textContent = username;
+
+
+    // Get a reference to the button
+    const nextEllipsis = document.getElementById('nextEllipsis');
+
+// Add a click event listener to the button
+nextEllipsis.addEventListener('click', () => {
+    // Replace 'page.html' with the actual HTML page you want to navigate to
+    window.location.href = 'page.html';
+});
+
+
+  </script>
+</body>
+</html>
